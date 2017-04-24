@@ -19,6 +19,8 @@
     </ul>
     <h3>登录</h3>
     <a href="#/login">登录</a>
+    <h3>执行方法渲染页面尝试</h3>
+    <div v-on:click="changeValue">点我我就变<span style="color: red">{{key}}</span></div>
   </div>
 </template>
 
@@ -27,9 +29,21 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      key:"===我会变"
     }
-  }
+  },
+   methods: {
+     changeValue:function(){
+       console.log(132213)
+       console.log(this.key)
+       if(this.key=="===我会变"){
+         this.key='===我变了';
+        }else{
+          this.key='===我会变';
+        } 
+     }
+   }
 }
 </script>
 
