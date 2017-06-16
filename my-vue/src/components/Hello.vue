@@ -38,7 +38,7 @@ export default {
        console.log(132213)
        console.log(this.key)
        if(this.key=="===我会变"){
-         this.key='===我变了';
+         this.key='===我变了h2h66678';
         }else{
           this.key='===我会变';
         } 

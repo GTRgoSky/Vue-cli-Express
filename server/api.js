@@ -23,15 +23,17 @@ router.post('/api/login/createAccount',(req,res) => {
     });
 });
 // 获取已有账号接口
-router.get('/api/login/getAccount',(req,res) => {
+router.get('/login/getAccount',(req,res) => {
     // 通过模型去查找数据库
-    models.Login.find((err,data) => {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(data);
-        }
-    });
+    // models.Login.find((err,data) => {
+    //     if (err) {
+    //         res.send(err);
+    //     } else {
+    //         res.send(data);
+    //     }
+    // });
+    console.log(req.body)
+    res.send("i get req")
 });
 
 module.exports = router;
